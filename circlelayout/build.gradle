@@ -104,8 +104,8 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "collapsingimagetext"
-        userOrg = ""
+        name = "CircleGestureLayout"
+        userOrg = "chengtahuang"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
