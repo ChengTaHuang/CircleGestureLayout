@@ -9,7 +9,6 @@ import android.support.annotation.ColorRes
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.widget.RelativeLayout
-import zeno.com.circleview.CircleCalculator
 
 /**
  * Created by zeno on 2018/2/10.

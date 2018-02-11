@@ -1,7 +1,6 @@
-package zeno.com.circleview
+package com.gesture.detector.circlelayout
 
 
-import com.gesture.detector.circlelayout.Point
 import java.util.*
 
 /**
