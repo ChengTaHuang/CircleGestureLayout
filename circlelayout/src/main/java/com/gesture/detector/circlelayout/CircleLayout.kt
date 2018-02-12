@@ -57,7 +57,7 @@ open class CircleLayout : RelativeLayout {
         try {
             minDegreeThreshold = a.getFloat(R.styleable.CircleLayout_minDegreeThreshold, CircleCalculator.minDegreeDefault.toFloat()).toDouble()
             maxDegreeThreshold = a.getFloat(R.styleable.CircleLayout_maxDegreeThreshold, CircleCalculator.maxDegreeDefault.toFloat()).toDouble()
-            cVRadiusThreshold = a.getFloat(R.styleable.CircleLayout_cvRadiusThreshHold, CircleCalculator.cvRadiusDefault.toFloat()).toDouble()
+            cVRadiusThreshold = a.getFloat(R.styleable.CircleLayout_cvRadiusThreshold, CircleCalculator.cvRadiusDefault.toFloat()).toDouble()
             trim = a.getFloat(R.styleable.CircleLayout_trim, CircleCalculator.trimDefault)
             showPoints = a.getBoolean(R.styleable.CircleLayout_show, false)
         } finally {
@@ -77,7 +77,7 @@ open class CircleLayout : RelativeLayout {
         try {
             minDegreeThreshold = a.getFloat(R.styleable.CircleLayout_minDegreeThreshold, CircleCalculator.minDegreeDefault.toFloat()).toDouble()
             maxDegreeThreshold = a.getFloat(R.styleable.CircleLayout_maxDegreeThreshold, CircleCalculator.maxDegreeDefault.toFloat()).toDouble()
-            cVRadiusThreshold = a.getFloat(R.styleable.CircleLayout_cvRadiusThreshHold, CircleCalculator.cvRadiusDefault.toFloat()).toDouble()
+            cVRadiusThreshold = a.getFloat(R.styleable.CircleLayout_cvRadiusThreshold, CircleCalculator.cvRadiusDefault.toFloat()).toDouble()
             trim = a.getFloat(R.styleable.CircleLayout_trim, CircleCalculator.trimDefault)
             showPoints = a.getBoolean(R.styleable.CircleLayout_show, false)
         } finally {
