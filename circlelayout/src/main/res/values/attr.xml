@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="CircleLayout">
-        <attr name="cvRadiusThreadHold" format="float" />
+        <attr name="cvRadiusThreshHold" format="float" />
         <attr name="minDegreeThreshold" format="float"/>
         <attr name="maxDegreeThreshold" format="float" />
         <attr name="trim" format="float" />
