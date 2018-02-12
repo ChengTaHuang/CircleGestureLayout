@@ -3,7 +3,6 @@ package com.gesture.detector.circlegesturelayout
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
-import android.widget.Toast
 import com.gesture.detector.circlelayout.CircleLayout
 
 class MainActivity : AppCompatActivity() {
@@ -18,11 +17,11 @@ class MainActivity : AppCompatActivity() {
         circleLayout.show()
         circleLayout.setOnCircleEventListener(object : CircleLayout.OnCircleEventListener{
             override fun onIsCircle(cvRadius: Float, inDegree: Boolean, isFullQuadrant: Boolean) {
-                resultTv.text = "circle $cvRadius , $inDegree , $isFullQuadrant"
+                resultTv.text = "This is a similar circle"
             }
 
             override fun onIsNotCircle(cvRadius: Float, inDegree: Boolean, isFullQuadrant: Boolean) {
-                resultTv.text = "not circle $cvRadius , $inDegree , $isFullQuadrant"
+                resultTv.text = "This is not a similar circle"
             }
         })
     }
