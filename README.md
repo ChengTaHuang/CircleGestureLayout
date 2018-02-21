@@ -54,7 +54,7 @@ circleLayout.setOnCircleEventListener(object : CircleLayout.OnCircleEventListene
 # Description
 * `cvRadius` : It's coefficient of variation of radius
 * `inDegree` : It's all of two adjacent point of degree between of `minDegreeThreshold` to `maxDegreeThreshold`
-* `isFullQuadrant` : Be chosen points are scattered on four quadrants based on the center of the graph
+* `isFullQuadrant` : If all four Quadrants contains at least one point, then the answer is true. Other cases are false
 
 # Custom attributes
 * `cvRadiusThreshHold` : Float (0.0 to 1.0) Threshold of the coefficient of variation of radius
@@ -68,6 +68,6 @@ circleLayout.setOnCircleEventListener(object : CircleLayout.OnCircleEventListene
 2. Calculate the average center and radius
 3. Calculate the coefficient of variation of radius(low than cvRadiusThreshHold)
 4. Calculate the cos(θ) between two adjacent points(between minDegreeThreshold to maxDegreeThreshold)
-5. Be chosen points are scattered on four quadrants based on the center of the graph
+5. Check all four Quadrants contains at least one point
 6. sorry for my english :)
 
