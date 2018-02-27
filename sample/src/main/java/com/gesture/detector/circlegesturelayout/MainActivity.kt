@@ -1,9 +1,13 @@
 package com.gesture.detector.circlegesturelayout
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.TextView
 import com.gesture.detector.circlelayout.CircleLayout
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var circleLayout : CircleLayout
@@ -24,5 +28,21 @@ class MainActivity : AppCompatActivity() {
                 resultTv.text = "This is not a similar circle"
             }
         })
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.recycler_view -> {
+                val intent = Intent(this@MainActivity , RecyclerViewSample::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
