@@ -64,10 +64,4 @@ circleLayout.setOnCircleEventListener(object : CircleLayout.OnCircleEventListene
 * `show` : Boolean (false or true) value is show or hide the result of gesture path
 
 # How to find Circle
-1. [Use Three points to find the Circumcenter](https://github.com/ChengTaHuang/CircleGestureLayout/blob/master/demo/graph.gif)
-2. Calculate the average center and radius
-3. Calculate the coefficient of variation of radius(low than cvRadiusThreshHold)
-4. Calculate the cos(θ) between two adjacent points(between minDegreeThreshold to maxDegreeThreshold)
-5. Check all four Quadrants contains at least one point
-6. sorry for my english :)
-
+[Let's go my post](https://medium.com/@zenohuang07/detect-circle-gesture-android-f5189f5cec4e)
